@@ -12,7 +12,10 @@ export default class FileService {
     }
 
     static getImageName() {
-        return "image_" + ('00' + State.currentFileNumber).slice(-3)
+        if (State.currentFileNumber < 1000) 
+            return "image_" + ('00' + State.currentFileNumber).slice(-3)
+        
+        return "image_" + ('00' + State.currentFileNumber).slice(-4)
     }
 
     static generateJsonString() {
