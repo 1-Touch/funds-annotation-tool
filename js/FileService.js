@@ -5,7 +5,7 @@ import LinkingService from "./LinkingService.js"
 export default class FileService {
 
     static getImageFilePath() {
-        return "/source/" + FileService.getImageName() + ".jpg"
+        return "/source/" + FileService.getImageName() + ".png"
     }
     static getJsonFilePath() {
         return "/source/" + FileService.getImageName() + ".json"
